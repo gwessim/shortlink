@@ -15,7 +15,7 @@ Auth::routes();
 
 Route::resource('links','LinkController');
 
-Route::get('/change-locale', 'Controller@changeLocale')->name('shorturl');
+Route::get('/change-locale', 'Controller@changeLocale');
 Route::get('/redirect/{shortLink}', 'Controller@redirectShortLink')->name('shorturl');
 
 

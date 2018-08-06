@@ -25,9 +25,9 @@ class SetLocale
 
             if (\Auth::user()) $locale = \Auth::user()->lang;
 
-            /*if ($locale != 'fr' && $locale != 'en') {
+            if ($locale != 'fr' && $locale != 'en') {
                 $locale = 'en';
-            }*/
+            }
         }
         
         App::setLocale($locale);
